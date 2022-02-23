@@ -1,0 +1,14 @@
+{
+  "python": {
+    "print": {
+      "command": "print",
+      "closer": "()"
+    }
+  },
+  "nodejs": {
+    "print": {
+      "command": "console.log",
+      "closer": "()"
+    }
+  }
+}
