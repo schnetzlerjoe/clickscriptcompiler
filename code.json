@@ -1,24 +1,20 @@
 {
-  "script": {
-    "1": {
-      "command": "add",
-      "args": [
+  "script": [
+    {
+      "line": 1,
+      "actions": [
         {
-          "content": 5
-        },
-        {
-          "content": 10
+          "line": 1,
+          "action": "print",
+          "args": [
+            {
+              "arg": "Hello, world!",
+              "type": "string"
+            }
+          ]
         }
-      ]
-    },
-    "2": {
-      "command": "print",
-      "args": [
-        {
-          "content": "Hello, World!"
-        }
-      ]
+      ] 
     }
-  },
+  ],
   "length": 1
 }
