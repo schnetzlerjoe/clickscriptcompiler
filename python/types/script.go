@@ -1,23 +1,33 @@
 package types
 
-type Arg struct {
-  Arg string `json:"arg"`
-  Type string `json:"type"`
-}
-
-type Action struct {
-  Line uint64 `json:"line"`
-  Action string `json:"action"`
-  Args []Arg `json:"args"`
-}
-
-type Code struct {
-  RawCode string `json:"raw_code"`
-}
+import (
+	"log"
+	"os"
+  "github.com/schnetzlerjoe/clickscriptcompiler/python/actions"
+)
 
 type Script struct {
-  File string `json:"file"`
-  Code Code `json:"code"`
-  Actions []Action `json:"actions"`
+  FileName string `json:"file_name"`
+  Commands []Command `json:"script"`
   Length uint64 `json:"length"`
+}
+
+func (s Script) Compile() {
+  var code string
+  var err error
+  for _, command := range s.Commands {
+    run := command.Action.Function
+    run(args)
+  }
+  
+  f, err := os.Create("script.py")
+  if err != nil {
+      log.Fatal(err)
+  }
+  defer f.Close()
+
+  _, err2 := f.WriteString(code)
+  if err2 != nil {
+      log.Fatal(err2)
+  }
 }

@@ -2,19 +2,21 @@
   "script": [
     {
       "line": 1,
-      "actions": [
-        {
-          "line": 1,
-          "action": "print",
-          "args": [
-            {
-              "arg": "Hello, world!",
-              "type": "string"
-            }
-          ]
-        }
-      ] 
+      "action": {
+        "function": "print",
+        "args": [
+          {
+            "arg": "string",
+            "value": "Hello,"
+          },
+          {
+            "arg": "string",
+            "value": " world!"
+          }
+        ]
+      }
     }
   ],
-  "length": 1
+  "length": 1,
+  "file_name": "code.json"
 }
