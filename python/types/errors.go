@@ -1,7 +1,9 @@
+package types
+
 import (
-  "errors"
+	"errors"
 )
 
 var (
-	ErrEVM = errors.Register(ModuleName, 1, "bridge error"
+	ErrArgNotFound = errors.New("arg not found")
 )
