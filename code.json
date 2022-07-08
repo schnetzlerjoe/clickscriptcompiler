@@ -3,17 +3,8 @@
     {
       "line": 1,
       "action": {
-        "function": "print",
-        "args": [
-          {
-            "arg": "string",
-            "value": "Hello,"
-          },
-          {
-            "arg": "string",
-            "value": " world!"
-          }
-        ]
+        "function_name": "print",
+        "args": "ewogICJ2YWx1ZXMiOiBbCiAgICAiSGVsbG8iLAogICAgIndvcmxkISIKICBdCn0="
       }
     }
   ],
